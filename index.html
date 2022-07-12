@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFlow Übung lev1_1: CSS-Vertiefung / forms</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="formsBlock">
+
+            <!-- Name -->
+            <label for="fullname">Name <span>*</span></label>
+            <input type="text" name="firstname" id="firstname" placeholder="Vorname">
+            <input type="text" name="lastname" id="lastname" placeholder="Nachname">
+
+            <!-- E-Mail -->
+            <label for="email">E-Mail <span>*</span></label>
+            <input type="email" name="email" id="email" placeholder="example@mail.com">
+
+            <!-- Thema -->
+            <label for="topic">Thema</label>
+            <select name="topic" id="topic">
+                <option value="general">General</option>
+                <option value="advertise" selected>Advertise</option>
+                <option value="partnership">Partnership</option>
+            </select>
+
+            <!-- Nachricht -->
+            <label for="message">Nachricht <span>*</span></label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+            <!-- Submit Button -->
+            <div class="submitButton">
+            <input type="submit" value="Submit">
+            </div>
+            
+        </div>
+    </form>
+</body>
+
+</html>
